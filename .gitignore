@@ -1,15 +1,10 @@
-# TODO: Your editor's folder
-# .vscode/
-
-# After you uncomment the line above/ignore your editor's folder, you can
-# run `git rm -r --cached .vscode` from your workspace root, so the folder becomes
-# untracked/ignored by git (committing will mark the folder as deleted)
-
+.vscode/
 __pycache__/
 .pytest-cache/
 
 env/
 node_modules/
+package-lock.json
 
 production.min.css
 private_settings.py
