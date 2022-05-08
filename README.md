@@ -1,42 +1,26 @@
-# Python project template
+# Python web project template
 
-A template for new Python projects.
+A template for new Python web projects.
 
 ## Features
 
-- Automatically builds [PDoc](https://pdoc3.github.io/pdoc/) documentation & uploads package to [PyPI](https://pypi.org) on new GitHub release, thanks to GitHub actions;
-- Tests with pyTest before uploading to PyPI (or you can test manually with `workflow-dispatch`);
-- Ready-to-go `setup.py` file;
-- Scripts to build documentation and compile as a Python package;
-- A to-do list below;
-- Possibly more ;)
+- Flask + FastAPI for backend; Alpine.js + Tailwind CSS for frontend;
+- SQLModel for database;
+- Flask-Login for user authentication, Flask-Babel for i18n;
+- Everything works out of the box with best practices and is ready to be built upon;
 
 ## Your to-do list
 
-- [ ] Edit `# FIXME` lines to match your project;
-  - [ ] setup.py
-    - [ ] Package name
-    - [ ] License
-    - [ ] Version
-    - [ ] Author
-    - [ ] Author email
-    - [ ] Description
-    - [ ] Keywords
-    - [ ] Classifiers
-    - [ ] Repository URL
-- [ ] Setup virtualenv (`scripts/setup_virtualenv_windows.ps1` for Windows);
-- [ ] Rename `python_project_template` folder and start writing your source code;
+- [ ] Edit `# FIXME` and `# TODO` lines to match your project;
+- [ ] Setup virtualenv (`python -m venv env`);
+- [ ] Rename `python_web_project_template` folder and start editing the source code;
+  - [ ] Also run a global search/replace for `python_web_project_template` (trust me, it'll save you a lot of time and will prevent you from forgetting to edit it somewhere);
+- [ ] Edit variables in `python_web_project_template/settings.py` and create `python_web_project_template/private_settings.py` (use template from `python_web_project_template/private_settings.template.py`);
 - [ ] Add your dependencies to `requirements.txt`;
 - [ ] Update .gitingore with your stuff;
 - [ ] Replace this `README.md` file with a fancier one;
 - [ ] Upload code to your GitHub repository;
-- [ ] Turn on GitHub pages and use `documentation` as your pages branch;
-- [ ] Add your editior to `.gitignore`;
-- [ ] Add your PyPI API key to GitHub secrets (`PYPI_API_TOKEN`);
-- [ ] When your are done, make a new release at GitHub to build documentation and upload to PyPI;
-  - Don't forget to bump version in `setup.py` everytime you do a new release!!!
-
-Generated documentation example: https://cwkevo.github.io/python-project-template
+- [ ] Add your editior's folder to `.gitignore`;
 
 That should be it. Happy coding!
 

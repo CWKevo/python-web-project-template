@@ -1,1 +1,16 @@
+flask
+fastapi
+
+sqlmodel
+
+bcrypt
+flask_login
+flask_babel
+
+sentry_sdk
 pytest
+
+requests
+beautifulsoup4
+
+uvicorn
