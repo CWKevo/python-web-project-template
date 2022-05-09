@@ -49,7 +49,7 @@ if SENTRY_DSN is not None:
     import sentry_sdk
     from sentry_sdk.integrations.asgi import SentryAsgiMiddleware
 
-    sentry_sdk.init(dsn="https://examplePublicKey@o0.ingest.sentry.io/0")
+    sentry_sdk.init(dsn=SENTRY_DSN)
 
     API.add_middleware(SentryAsgiMiddleware)
 
