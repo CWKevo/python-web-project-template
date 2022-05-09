@@ -1,6 +1,8 @@
 import typing as t
 import python_web_project_template.settings as s
 
+from python_web_project_template.private_settings import SENTRY_DSN
+
 import fastapi as fa
 from starlette.datastructures import URLPath
 from starlette.routing import NoMatchFound
@@ -40,6 +42,16 @@ API = fa.FastAPI(title=s.APP_NAME, version=s.APP_VERSION, docs_url="/", redoc_ur
 
 for router in ALL_ROUTERS:
     API.include_router(router, prefix=router.prefix)
+
+
+
+if SENTRY_DSN is not None:
+    import sentry_sdk
+    from sentry_sdk.integrations.asgi import SentryAsgiMiddleware
+
+    sentry_sdk.init(dsn="https://examplePublicKey@o0.ingest.sentry.io/0")
+
+    API.add_middleware(SentryAsgiMiddleware)
 
 
 
